@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/rizuki96/frontend_mentor_single_price_grid_component)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-grid-component-html-css-little-js-V2WuyYQxQ)
 - Live Site URL: [Github Pages](https://rizuki96.github.io/frontend_mentor_single_price_grid_component)
 
 ## My process
