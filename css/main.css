@@ -176,12 +176,8 @@ body .card ul.list {
 
 body .attribution {
   font-size: 0.75rem;
-  position: absolute;
-  bottom: 0.75rem;
-  right: 50%;
+  margin-top: 2rem;
   text-align: center;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
 }
 
 body .attribution a {

@@ -147,11 +147,8 @@ body {
 
   .attribution {
     font-size: 0.75rem;
-    position: absolute;
-    bottom: 0.75rem;
-    right: 50%;
+    margin-top: 2rem;
     text-align: center;
-    transform: translateX(50%);
     a {
       color: hsl(228, 45%, 44%);
     }
