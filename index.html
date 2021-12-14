@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <article class="card">
+      <div class="card__header">
+        <h1 class="card__title">Join our community</h1>
+
+        <h3 class="card__subtitle">30-day, hassle-free money back guarantee</h3>
+
+        <p class="card__copy">
+          Gain access to our full library of tutorials along with expert code
+          reviews. Perfect for any developers who are serious about honing their
+          skills.
+        </p>
+      </div>
+
+      <div class="card__main">
+        <h3 class="card__subtitle">Monthly Subscription</h3>
+
+        <div class="price">&dollar;29 <span>per month</span></div>
+
+        <p class="card__copy">Full access for less than &dollar;1 a day</p>
+
+        <div class="card__actions">
+          <button class="button">Sign Up</button>
+        </div>
+      </div>
+
+      <div class="card__footer">
+        <h3 class="card__subtitle">Why Us</h3>
+
+        <ul class="list">
+          <li class="list_item">Tutorials by industry experts</li>
+          <li class="list_item">Peer &amp; expert code review</li>
+          <li class="list_item">Coding exercises</li>
+          <li class="list_item">Access to our GitHub repos</li>
+          <li class="list_item">Community forum</li>
+          <li class="list_item">Flashcard decks</li>
+          <li class="list_item">New videos every week</li>
+        </ul>
+      </div>
+    </article>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">RiiDesign</a>.
+      </p>
+    </footer>
+    <script>
+      function createRipple(event) {
+        const button = event.currentTarget;
+
+        const circle = document.createElement("span");
+        const diameter = Math.max(button.clientWidth, button.clientHeight);
+        const radius = diameter / 2;
+
+        circle.style.width = circle.style.height = `${diameter}px`;
+        circle.style.left = `${event.clientX - button.offsetLeft - radius}px`;
+        circle.style.top = `${event.clientY - button.offsetTop - radius}px`;
+
+        circle.classList.add("circle");
+        const ripple = button.getElementsByClassName("circle")[0];
+
+        if (ripple) {
+          ripple.remove();
+        }
+
+        button.appendChild(circle);
+      }
+
+      const buttons = document.getElementsByTagName("button");
+      for (const button of buttons) {
+        button.addEventListener("click", createRipple);
+      }
+    </script>
+  </body>
+</html>
